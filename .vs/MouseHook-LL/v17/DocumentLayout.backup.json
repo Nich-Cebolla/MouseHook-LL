@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Shared\\001_Repos\\MouseHook-LL\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2A36D1AC-64E8-49E9-A4D9-F012A5073665}|MouseHook-LL.vcxproj|C:\\Users\\Shared\\001_Repos\\MouseHook-LL\\MouseHook-LL.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2A36D1AC-64E8-49E9-A4D9-F012A5073665}|MouseHook-LL.vcxproj|solutionrelative:MouseHook-LL.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MouseHook-LL.cpp",
+              "DocumentMoniker": "C:\\Users\\Shared\\001_Repos\\MouseHook-LL\\MouseHook-LL.cpp",
+              "RelativeDocumentMoniker": "MouseHook-LL.cpp",
+              "ToolTip": "C:\\Users\\Shared\\001_Repos\\MouseHook-LL\\MouseHook-LL.cpp",
+              "RelativeToolTip": "MouseHook-LL.cpp",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAiwBIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-07T07:56:23.094Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

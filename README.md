@@ -10,7 +10,7 @@ Here is a working demo script:
 #include MsLlHookStruct.ahk
 
 ; Set the path to the dll file on your machine. See file "Win32\MsLlHookStruct.ahk" for an explanation.
-DllPath := "C:\Users\westn\Desktop\x64\Debug\MouseHookLL.dll"
+DllPath := ""
 
 test()
 

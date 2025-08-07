@@ -10,7 +10,7 @@ Here is a working demo script:
 #include MsLlHookStruct.ahk
 
 ; Set the path to the dll file on your machine. See file "Win32\MsLlHookStruct.ahk" for an explanation.
-DllPath := ''
+DllPath := "C:\Users\westn\Desktop\x64\Debug\MouseHookLL.dll"
 
 test()
 
@@ -29,13 +29,19 @@ class test {
         this.start := DllCall('GetProcAddress', 'ptr', this.hDll, 'AStr', 'StartHook', 'ptr')
         this.stop := DllCall('GetProcAddress', 'ptr', this.hDll, 'AStr', 'StopHook', 'ptr')
         this.MouseHookProcPtr := CallbackCreate(LowLevelMouseProc)
+        this.OnExitCallback := ObjBindMethod(this, 'Unhook')
 
         HClickButtonStart(*) {
             DllCall(this.start, 'ptr', this.MouseHookProcPtr, 'int')
+            OnExit(this.OnExitCallback, 1)
         }
         HClickButtonStop(*) {
-            DllCall(this.stop, 'ptr', this.MouseHookProcPtr, 'int')
+            this.Unhook()
         }
+    }
+    static Unhook(*) {
+        DllCall(this.stop, 'int')
+        OnExit(this.OnExitCallback, 0)
     }
 }
 

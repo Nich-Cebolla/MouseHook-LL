@@ -6,10 +6,11 @@ To compile, load MouseHook-LL.sln in Visual Studio and build the project. You ca
 Here is a working demo script:
 
 ```
-#include ..\Win32
-#include MsLlHookStruct.ahk
+; https://github.com/Nich-Cebolla/AutoHotkey-LibV2/blob/main/Win32/MsLlHookStruct.ahk
+#include <MsLlHookStruct>
 
-; Set the path to the dll file on your machine. See file "Win32\MsLlHookStruct.ahk" for an explanation.
+; Set the path to the dll file on your machine. See file
+; "https://github.com/Nich-Cebolla/AutoHotkey-LibV2/blob/main/Win32/MsLlHookStruct.ahk" for an explanation.
 DllPath := ""
 
 test()
